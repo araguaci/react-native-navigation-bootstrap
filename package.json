@@ -5,12 +5,16 @@
   "scripts": {
     "start": "watchman watch-del-all && (adb reverse tcp:8081 tcp:8081 || true) && node node_modules/react-native/local-cli/cli.js start",
     "android": "cd android ; ./gradlew installDebug",
-    "xcode": "open ios/react_native_navigation_bootstrap.xcodeproj"
+    "xcode": "open ios/react_native_navigation_bootstrap.xcodeproj",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "react-native": "0.44.2",
+    "react-native": "0.49.0",
     "react": "16.0.0-alpha.6",
     "react-native-navigation": "1.x.x",
-    "prop-types": "*"
-  }
+    "prop-types": "*",
+    "snyk": "^1.88.0"
+  },
+  "snyk": true
 }
