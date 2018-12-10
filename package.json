@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "react-native": "0.44.2",
-    "react": "16.0.0-alpha.6",
-    "react-native-navigation": "1.x.x",
-    "prop-types": "*"
+    "react": "16.0.0",
+    "react-native-navigation": "1.1.235",
+    "prop-types": "15.6.0"
   }
 }
